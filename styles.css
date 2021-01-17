@@ -10,3 +10,11 @@ p {
 img {
   text-align: center;
 }
+
+a {
+  background-color:green;
+  padding:5px;
+  color:white;
+  text-align:center;
+  text-decoration:none
+}
