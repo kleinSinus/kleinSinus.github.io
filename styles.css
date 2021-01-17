@@ -8,6 +8,7 @@ p {
   color: red;
 }
 img {
+  float:center;
   width: 50%;
   height: 50%;
 }
