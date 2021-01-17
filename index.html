@@ -8,33 +8,36 @@
 <h1> Who is kleinSinus ? </h1>
 <h2> A student of Computer Science </h2>
 <pre>
-    func drink(){
-	    if(cup.content() == 0){
-			if(checkPantry("coffee") == true){
-				getCoffee();
-				cup.refill();
-			} else if(checkPantry("tea") == true){
-				addToGroceryList("coffee");
-				getTea();
-				cup.refill();
-			} else {
-				addToGroceryList("coffee");
-				addToGroceryList("tea");
-				weep();
-			}
-		}
-	}
+  func drink(){
+    if(cup.content() == 0){
+      if(checkPantry("coffee") == true){
+        getCoffee();
+        cup.refill();
+        enjoy();
+      } else if(checkPantry("tea") == true){
+        addToGroceryList("coffee");
+        getTea();
+        cup.refill();
+        enjoy();
+      } else {
+        addToGroceryList("coffee");
+        addToGroceryList("tea");
+        weep();
+      }
+      enjoy();
+    }
+  }
 
-    while(work != done){
-		setTimer(15);
-		while(timer != 0){
-		    if(currentTask.done == 1){
-			    getNextTask();
-			}
-			work();
-		}
-		drink();
-	}
+  while(work != done){
+    setTimer(15);
+    while(timer != 0){
+      if(currentTask.done == 1){
+        getNextTask();
+      }
+      work();
+    }
+    drink();
+  }
 </pre>
 <hr>
 <h2>A hobbyist artist</h2>
